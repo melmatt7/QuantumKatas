@@ -42,6 +42,7 @@ RUN cd ${HOME} && \
     #./scripts/prebuild-kata.sh QEC_BitFlipCode && \
     ./scripts/prebuild-kata.sh QFT && \
     #./scripts/prebuild-kata.sh RippleCarryAdder && \
+    ./scripts/prebuild-kata.sh SolveCryptarithmsWithGrover && \
     ./scripts/prebuild-kata.sh SolveSATWithGrover && \
     ./scripts/prebuild-kata.sh SuperdenseCoding && \
     ./scripts/prebuild-kata.sh Superposition && \

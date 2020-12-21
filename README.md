@@ -2,160 +2,162 @@
 
 The Quantum Katas are a series of self-paced tutorials to help you learn quantum computing and Q# programming.
 
-:new: *(November 2019)* We've added a set of tutorials that introduce the learner to the most basic concepts used in quantum computing, 
-starting with the necessary math (complex numbers and linear algebra). 
+:new: _(November 2019)_ We've added a set of tutorials that introduce the learner to the most basic concepts used in quantum computing,
+starting with the necessary math (complex numbers and linear algebra).
 Read more about the new tutorials [here](https://devblogs.microsoft.com/qsharp/new-tutorials-learn-the-basic-concepts-of-quantum-computing/)
 or head to the [list of tutorials](./index.ipynb) to get started!
 
-:new: *(July 2019)* The Quantum Katas now include Jupyter Notebook tutorials on quantum computing! 
-Each tutorial combines theoretical explanations with Q# code snippets and programming exercises. 
+:new: _(July 2019)_ The Quantum Katas now include Jupyter Notebook tutorials on quantum computing!
+Each tutorial combines theoretical explanations with Q# code snippets and programming exercises.
 See [index.ipynb](./index.ipynb) for the list of all tutorials and instructions on running them online.
 
-:new: *(April 2019)* The Quantum Katas are now available as Jupyter Notebooks! 
+:new: _(April 2019)_ The Quantum Katas are now available as Jupyter Notebooks!
 See [index.ipynb](./index.ipynb) for the list of all Kata Notebooks and instructions on running them online.
 
 Each kata is a separate project that includes:
 
-* A sequence of tasks progressing from easy to hard.
+- A sequence of tasks progressing from easy to hard.
   Each task requires you to fill in some code. The first task might require just one line, and the last one might require rather complicated code.
-* A testing framework that sets up, runs, and validates your solutions.
+- A testing framework that sets up, runs, and validates your solutions.
   Each task is covered by a [unit test](https://docs.microsoft.com/visualstudio/test/getting-started-with-unit-testing) which initially fails. Once you write the code to make the test pass, you can move on to the next task.
-* Links to quantum computing and Q# reference material you might need to solve the tasks.
-* Hints and reference solutions to help you if you're stuck.
+- Links to quantum computing and Q# reference material you might need to solve the tasks.
+- Hints and reference solutions to help you if you're stuck.
 
-## Table of contents ##
+## Table of contents
 
-* [List of tutorials](#tutorial-topics)
-* [List of katas](#kata-topics)
-* [Run the katas and tutorials online](#run-online)
-* [Run the katas locally](#kata-locally)
-  * [Quantum Development Kit installation](#install)
-  * [Download the Quantum Katas](#download)
-  * [Run a kata as a Jupyter Notebook](#kata-as-notebook)
-  * [Run a kata as a Q# project](#kata-as-project)
-  * [Run kata tests](#tests)
-  * [Run katas locally with Docker](#docker)
-* [Contributing](#contributing)
-* [Code of Conduct](#code-of-conduct)
+- [List of tutorials](#tutorial-topics)
+- [List of katas](#kata-topics)
+- [Run the katas and tutorials online](#run-online)
+- [Run the katas locally](#kata-locally)
+  - [Quantum Development Kit installation](#install)
+  - [Download the Quantum Katas](#download)
+  - [Run a kata as a Jupyter Notebook](#kata-as-notebook)
+  - [Run a kata as a Q# project](#kata-as-project)
+  - [Run kata tests](#tests)
+  - [Run katas locally with Docker](#docker)
+- [Contributing](#contributing)
+- [Code of Conduct](#code-of-conduct)
 
-## List of tutorials <a name="tutorial-topics" /> ##
+## List of tutorials <a name="tutorial-topics" />
 
-* **[Complex arithmetic](./tutorials/ComplexArithmetic/)**.
+- **[Complex arithmetic](./tutorials/ComplexArithmetic/)**.
   Learn about complex numbers and the mathematics required to work with quantum computing.
-* **[Linear algebra](./tutorials/LinearAlgebra/)**.
+- **[Linear algebra](./tutorials/LinearAlgebra/)**.
   Learn about vectors and matrices used to represent quantum states and quantum operations.
-* **[The qubit](./tutorials/Qubit/)**.
+- **[The qubit](./tutorials/Qubit/)**.
   Learn what a qubit is.
-* **[Single-qubit gates](./tutorials/SingleQubitGates/)**.
+- **[Single-qubit gates](./tutorials/SingleQubitGates/)**.
   Learn what a quantum gate is and about the most common single-qubit gates.
-* **[Multi-qubit systems](./tutorials/MultiQubitSystems/)**.
+- **[Multi-qubit systems](./tutorials/MultiQubitSystems/)**.
   Learn to represent multi-qubit systems.
-* **[Multi-qubit gates](./tutorials/MultiQubitGates/)**.
+- **[Multi-qubit gates](./tutorials/MultiQubitGates/)**.
   Learn about the most common multi-qubit gates.
-* **[Random number generation](./tutorials/RandomNumberGeneration/)**.
+- **[Random number generation](./tutorials/RandomNumberGeneration/)**.
   Learn to generate random numbers using the principles of quantum computing.
-* **[Exploring Deutsch–Jozsa algorithm](./tutorials/ExploringDeutschJozsaAlgorithm/)**.
+- **[Exploring Deutsch–Jozsa algorithm](./tutorials/ExploringDeutschJozsaAlgorithm/)**.
   Learn to implement classical functions and equivalent quantum oracles, and compare the quantum
   solution to the Deutsch–Jozsa problem to a classical one.
-* **[Exploring Grover's search algorithm](./tutorials/ExploringGroversAlgorithm/)**.
+- **[Exploring Grover's search algorithm](./tutorials/ExploringGroversAlgorithm/)**.
   Learn more about Grover's search algorithm, picking up where the [Grover's algorithm kata](./GroversAlgorithm/) left off.
-* **[Quantum classification](./tutorials/QuantumClassification/)**.
+- **[Quantum classification](./tutorials/QuantumClassification/)**.
   Learn about circuit-centric classifiers and the quantum machine learning library included in the QDK.
 
-## List of Katas <a name="kata-topics" /> ##
+## List of Katas <a name="kata-topics" />
 
 #### Quantum computing concepts
 
-* **[Basic quantum computing gates](./BasicGates/)**.
+- **[Basic quantum computing gates](./BasicGates/)**.
   Learn to apply the most common gates used in quantum computing.
-* **[Superposition](./Superposition/)**.
+- **[Superposition](./Superposition/)**.
   Learn to prepare superposition states.
-* **[Measurements](./Measurements/)**.
+- **[Measurements](./Measurements/)**.
   Learn to distinguish quantum states using measurements.
-* **[Joint measurements](./JointMeasurements/)**.
+- **[Joint measurements](./JointMeasurements/)**.
   Learn about using joint (parity) measurements to distinguish quantum states and to perform state transformations.
 
 #### Simple algorithms
 
-* **[Teleportation](./Teleportation/)**.
+- **[Teleportation](./Teleportation/)**.
   Implement standard teleportation protocol and its variations.
-* **[Superdense coding](./SuperdenseCoding/)**.
+- **[Superdense coding](./SuperdenseCoding/)**.
   Implement the superdense coding protocol.
-* **[Deutsch–Jozsa algorithm](./DeutschJozsaAlgorithm/)**.
+- **[Deutsch–Jozsa algorithm](./DeutschJozsaAlgorithm/)**.
   Learn about quantum oracles which implement classical functions, and implement Bernstein–Vazirani and Deutsch–Jozsa algorithms.
-* **[Simon's algorithm](./SimonsAlgorithm/)**.
+- **[Simon's algorithm](./SimonsAlgorithm/)**.
   Learn about Simon's algorithm.
 
 #### Grover's algorithm
 
-* **[Grover's algorithm](./GroversAlgorithm/)**.
+- **[Grover's algorithm](./GroversAlgorithm/)**.
   Learn about Grover's search algorithm and how to write quantum oracles to use with it.
-* **[Solving SAT problems using Grover's algorithm](./SolveSATWithGrover/)**.
+- **[Solving SAT problems using Grover's algorithm](./SolveSATWithGrover/)**.
   Explore Grover's search algorithm, using SAT problems as an example. Learn to implement quantum oracles based on the problem description instead of a hard-coded answer. Use Grover's algorithm to solve problems with an unknown number of solutions.
-* **[Solving graph coloring problems using Grover's algorithm](./GraphColoring/)**.
+- **[Solving graph coloring problems using Grover's algorithm](./GraphColoring/)**.
   Continue the exploration of Grover's search algorithm, using graph coloring problems as an example.
+- **[Solving Cryptarithms using Grover's algorithm](./SolveCryptarithmsWithGrover/)**.
+  Continue the exploration of Grover's search algorithm, using cryptarithm problems as an application.
 
 #### Tools and libraries/Building up to Shor's algorithm
 
-* **[Quantum Fourier transform](./QFT/)**.
+- **[Quantum Fourier transform](./QFT/)**.
   Learn to implement quantum Fourier transform and to use it to perform simple state transformations.
-* **[Phase estimation](./PhaseEstimation/)**.
+- **[Phase estimation](./PhaseEstimation/)**.
   Learn about phase estimation algorithms.
 
 #### Entanglement games
 
-* **[CHSH game](./CHSHGame/)**.
-* **[GHZ game](./GHZGame/)**.
-* **[Mermin-Peres magic square game](./MagicSquareGame)**.
+- **[CHSH game](./CHSHGame/)**.
+- **[GHZ game](./GHZGame/)**.
+- **[Mermin-Peres magic square game](./MagicSquareGame)**.
 
 #### Reversible computing
 
-* **[Truth tables](./TruthTables/)**.
+- **[Truth tables](./TruthTables/)**.
   Learn to represent and manipulate Boolean functions as truth tables and to implement them as quantum operations.
-* **[Ripple-carry adder](./RippleCarryAdder/)**.
+- **[Ripple-carry adder](./RippleCarryAdder/)**.
   Build a ripple-carry adder on a quantum computer.
 
 #### Miscellaneous
 
-* **[BB84 protocol](./KeyDistribution_BB84/)**.
+- **[BB84 protocol](./KeyDistribution_BB84/)**.
   Implement the BB84 key distribution algorithm.
-* **[Bit-flip error correcting code](./QEC_BitFlipCode/)**.
+- **[Bit-flip error correcting code](./QEC_BitFlipCode/)**.
   Learn about a 3-qubit error correcting code for protecting against bit-flip errors.
-* **[Distinguish Unitaries](./DistinguishUnitaries/)**.
+- **[Distinguish Unitaries](./DistinguishUnitaries/)**.
   Learn to distinguish unitaries by designing and performing experiments with them.
-* **[Unitary Patterns](./UnitaryPatterns/)**.
+- **[Unitary Patterns](./UnitaryPatterns/)**.
   Learn to implement unitaries with matrices that follow certain patterns of zero and non-zero elements.
 
 > For a Q# programming language quick reference sheet, see [Q# Language Quick Reference](./quickref/qsharp-quick-reference.pdf).
 
-## Run the katas and tutorials online <a name="run-online" /> ##
+## Run the katas and tutorials online <a name="run-online" />
 
 The Quantum Katas are now available as Jupyter Notebooks online! See [index.ipynb](https://mybinder.org/v2/gh/Microsoft/QuantumKatas/master?filepath=index.ipynb) for the list of all katas and tutorials, and instructions for running them online.
 
-> While running the Katas online is the easiest option to get started, if you want to save your progress and enjoy better performance, we recommend you to choose the local option. 
+> While running the Katas online is the easiest option to get started, if you want to save your progress and enjoy better performance, we recommend you to choose the local option.
 
-## Run the katas locally <a name="kata-locally" /> ##
+## Run the katas locally <a name="kata-locally" />
 
-### Quantum Development Kit Installation <a name="install" /> ###
+### Quantum Development Kit Installation <a name="install" />
 
 To use the Quantum Katas locally, you'll need the [Quantum Development Kit](https://docs.microsoft.com/quantum), available for Windows 10, macOS, and Linux.
 If you don't already have the Quantum Development Kit installed, see the [install guide for the Quantum Development Kit](https://docs.microsoft.com/quantum/install-guide/).
 
 **If you want to run the katas and tutorials locally as Jupyter Notebooks**:
-1. Follow the steps in the [QDK install guide for Python](https://docs.microsoft.com/quantum/install-guide/pyinstall) 
-  and the [QDK install guide for Jupyter Notebooks](https://docs.microsoft.com/quantum/install-guide/qjupyter).
+
+1. Follow the steps in the [QDK install guide for Python](https://docs.microsoft.com/quantum/install-guide/pyinstall)
+   and the [QDK install guide for Jupyter Notebooks](https://docs.microsoft.com/quantum/install-guide/qjupyter).
 2. Several tutorials require installing additional Python packages:
-   * "Complex arithmetic" and "Linear algebra" require the [`pytest` package](https://docs.pytest.org/en/latest/getting-started.html).
-   * "Exploring Grover's search algorithm" requires the [`matplotlib` package](https://matplotlib.org/3.1.1/users/installing.html).
+   - "Complex arithmetic" and "Linear algebra" require the [`pytest` package](https://docs.pytest.org/en/latest/getting-started.html).
+   - "Exploring Grover's search algorithm" requires the [`matplotlib` package](https://matplotlib.org/3.1.1/users/installing.html).
 
 **If you want to run the katas and tutorials locally as Q# projects**:
 
-Follow the steps in the QDK install guide [for Visual Studio](https://docs.microsoft.com/quantum/install-guide/csinstall#develop-with-q--c-using-visual-studio-), 
-[for Visual Studio Code](https://docs.microsoft.com/quantum/install-guide/csinstall#develop-with-q--c-using-visual-studio-code-) or 
+Follow the steps in the QDK install guide [for Visual Studio](https://docs.microsoft.com/quantum/install-guide/csinstall#develop-with-q--c-using-visual-studio-),
+[for Visual Studio Code](https://docs.microsoft.com/quantum/install-guide/csinstall#develop-with-q--c-using-visual-studio-code-) or
 [for command line with other editors](https://docs.microsoft.com/quantum/install-guide/csinstall#develop-with-q--c-using-the-dotnet-command-line-tool-).
 
-
-### Download the Quantum Katas <a name="download" /> ###
+### Download the Quantum Katas <a name="download" />
 
 If you have Git installed, clone the Microsoft/QuantumKatas repository:
 
@@ -165,12 +167,11 @@ $ git clone https://github.com/Microsoft/QuantumKatas.git
 
 > [!TIP]
 > Both Visual Studio 2019 and Visual Studio Code make it easy to clone repositories from within your development environment.
-> For details, see the [Visual Studio 2019](https://docs.microsoft.com/en-us/azure/devops/repos/git/clone?view=azure-devops&tabs=visual-studio#clone-from-another-git-provider) and [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#_cloning-a-repository) documentation.
+> For details, see the [Visual Studio 2019](https://docs.microsoft.com/en-us/azure/devops/repos/git/clone?view=azure-devops&tabs=visual-studio#clone-from-another-git-provider) and [Visual Studio Code](https://code.visualstudio.com/docs/editor/versioncontrol#\_cloning-a-repository) documentation.
 
 If you don't have Git installed, download the katas from https://github.com/Microsoft/QuantumKatas/archive/master.zip.
 
-
-### Run a kata as a Jupyter Notebook <a name="kata-as-notebook" /> ###
+### Run a kata as a Jupyter Notebook <a name="kata-as-notebook" />
 
 The best way to run the katas as Jupyter Notebooks is to navigate to the root folder of the repository and to open `index.ipynb` using Jupyter:
 
@@ -182,6 +183,7 @@ $ jupyter notebook index.ipynb
 This will open the notebook that contains a list of all katas and tutorials, and you will be able to navigate to the one you want using links.
 
 > Note that this will start Jupyter Notebooks server in the same command line window you used to run the command. If you want to keep using that window for navigation, you can launch Jupyter Notebooks server in a new window using the following commands (on Windows):
+>
 > ```bash
 > $ cd QuantumKatas/
 > $ start jupyter notebook index.ipynb
@@ -194,8 +196,7 @@ $ cd QuantumKatas/tutorials/ComplexArithmetic
 $ jupyter notebook ComplexArithmetic.ipynb
 ```
 
-
-### Run a kata as a Q# project <a name="kata-as-project" /> ###
+### Run a kata as a Q# project <a name="kata-as-project" />
 
 Each kata is in its own directory as a self-contained Q# project, solution and Jupyter Notebook triplet.
 For instance, the BasicGates directory structure is:
@@ -225,11 +226,12 @@ Press **Ctrl + Shift + P** (or **⌘ + Shift + P** on macOS) to open the **Comma
 > If you get stuck, press **Ctrl + Shift + P** (or **⌘ + Shift + P** on macOS) and start typing to search through all available commands.
 >
 > You can also launch Visual Studio Code from the command line:
+>
 > ```bash
 > $ code QuantumKatas/BasicGates/
 > ```
 
-### Run kata tests <a name="tests" /> ###
+### Run kata tests <a name="tests" />
 
 Once you have a kata open, it's time to run the tests using the following instructions.
 Initially all tests will fail. Don't panic!
@@ -245,7 +247,7 @@ Open **Tasks.qs** and start filling in the code to complete the tasks. Each task
 #### Visual Studio Code
 
 1. Press **Ctrl + \`** (or **⌘ + \`** on macOS) to open the integrated terminal.
-   The terminal should open to the kata directory. If it doesn't, navigate to the folder containing the *.csproj file for the kata using `cd` command.
+   The terminal should open to the kata directory. If it doesn't, navigate to the folder containing the \*.csproj file for the kata using `cd` command.
 2. Run `dotnet test` in the integrated terminal.
    This should build the kata project and run all of the unit tests. All of the unit tests should fail.
 3. Work on the tasks in the **Tasks.qs** file.
@@ -254,7 +256,7 @@ Open **Tasks.qs** and start filling in the code to complete the tasks. Each task
 For convenience, a tasks.json configuration file exists for each kata. It allows Visual Studio Code to run the build and test steps from the Command Palette.
 Press **Ctrl + Shift + P** (or **⌘ + Shift + P** on macOS) to open the Palette and type **Run Build Task** or **Run Test Task** and press **Enter**.
 
-## Run katas locally with Docker <a name="docker" /> ##
+## Run katas locally with Docker <a name="docker" />
 
 You can use the included [Dockerfile](./Dockerfile) to create a docker image with all the necessary tools to run the katas from the command line or Jupyter.
 
@@ -285,7 +287,7 @@ cd ~/BasicGates/ && jupyter notebook --ip=0.0.0.0 --no-browser
 ```
 
 6. Once Jupyter has started, use your browser to open the kata in notebook format. You
-will need a token generated by Jupyter when it started on the previous step:
+   will need a token generated by Jupyter when it started on the previous step:
 
 ```
 http://localhost:8888/notebooks/BasicGates.ipynb
@@ -305,11 +307,11 @@ Once you're done, remove the `katas-container`:
 docker rm --force katas-container
 ```
 
-# Contributing <a name="contributing" /> #
+# Contributing <a name="contributing" />
 
-This project welcomes contributions and suggestions.  See [How Can I Contribute?](.github/CONTRIBUTING.md) for details.
+This project welcomes contributions and suggestions. See [How Can I Contribute?](.github/CONTRIBUTING.md) for details.
 
-# Code of Conduct <a name="code-of-conduct" /> #
+# Code of Conduct <a name="code-of-conduct" />
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
